@@ -14,7 +14,7 @@ import java.util.Map;
  * description:
  */
 public class AkkaDb extends AbstractActor {
-    protected final LoggingAdapter log = Logging.getLogger(context().system(), this);
+    private final LoggingAdapter log = Logging.getLogger(context().system(), this);
     protected final Map<String, Object> map = new HashMap<>();
 
     private AkkaDb() {
