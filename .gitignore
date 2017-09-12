@@ -3,4 +3,3 @@ LICENSE
 build.sbt
 libexec/
 project/
-src/test/
