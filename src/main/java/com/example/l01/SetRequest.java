@@ -21,4 +21,12 @@ public class SetRequest {
     public Object getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "SetRequest{" +
+                "key='" + key + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }

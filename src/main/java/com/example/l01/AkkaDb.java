@@ -21,6 +21,7 @@ public class AkkaDb extends AbstractActor {
         receive(ReceiveBuilder
                 .match(SetRequest.class, message -> {
                     log.info("Received Set request: {}", message);
+                    map.put(message.getKey(),message.getValue());
                 })
                 .matchAny(o -> log.info("received unknown message: {}", o)).build()
         );
