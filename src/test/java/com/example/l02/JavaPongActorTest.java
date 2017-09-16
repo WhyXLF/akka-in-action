@@ -3,6 +3,7 @@ package com.example.l02;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
+import com.example.l02.provider.JavaPongActor;
 import org.junit.Test;
 import scala.concurrent.Future;
 

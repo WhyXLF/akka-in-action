@@ -1,4 +1,4 @@
-package com.example.l02;
+package com.example.l02.provider;
 
 import java.io.Serializable;
 
