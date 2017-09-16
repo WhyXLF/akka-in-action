@@ -15,7 +15,7 @@ import scala.runtime.BoxedUnit;
 public class JavaPongActor extends AbstractActor {
     @Override
     public PartialFunction<Object, BoxedUnit> receive() {
-        return ReceiveBuilder.matchEquals("Ping", msg -> sender().tell("ping", ActorRef.noSender())
+        return ReceiveBuilder.matchEquals("Ping", msg -> sender().tell("Pong", ActorRef.noSender())
         ).matchAny(msg -> {
             sender().tell(new Status.Failure(new Exception("Unknown message")), self());
         }).build();
